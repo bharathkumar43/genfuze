@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # LLM Q&A Tool with AI-Powered Confidence Calculation
 
 A React TypeScript application that generates intelligent questions from blog content and provides AI-powered answers using Google's Gemini API.
@@ -133,3 +134,6 @@ The application will remember your preference for future sessions.
 =======
 # genfuze
 >>>>>>> 4417237f6429c1eb28af0a223c2fb3ab29098a5d
+=======
+# genfuze
+>>>>>>> 376ff6a2170817ef5be3b3061d02d61dbf300aba
