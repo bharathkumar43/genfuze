@@ -20,8 +20,8 @@ Write-Host "🔄 Updating .env file with Azure configuration..." -ForegroundColo
 $envContent = Get-Content ".env" -Raw
 
 # Azure configuration values from backend
-$azureClientId = "8d042e34-5a5f-40f5-a019-ee56de49b64e"
-$azureTenantId = "c16b04b5-b78c-4cce-b3f8-93686f221d09"
+$azureClientId = "your-azure-client-id-here"
+$azureTenantId = "your-azure-tenant-id-here"
 
 # Update the Azure configuration lines
 $updatedContent = $envContent -replace "VITE_REACT_APP_AZURE_CLIENT_ID=", "VITE_REACT_APP_AZURE_CLIENT_ID=$azureClientId"

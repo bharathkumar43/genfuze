@@ -10,7 +10,7 @@ This means your Azure AD app registration needs to be configured as a **Single-p
 ### Step 1: Access Azure Portal
 1. Go to [Azure Portal](https://portal.azure.com)
 2. Navigate to **Azure Active Directory** → **App registrations**
-3. Find your app: **Genfuze.ai** (or the app with Client ID: `8d042e34-5a5f-40f5-a019-ee56de49b64e`)
+3. Find your app: **Genfuze.ai** (or the app with Client ID: `your-azure-client-id-here`)
 
 ### Step 2: Update Authentication Settings
 1. Click on your app registration
@@ -81,7 +81,7 @@ Update your `.env` file with the new Client ID:
 
 ```env
 VITE_REACT_APP_AZURE_CLIENT_ID=your-new-client-id
-VITE_REACT_APP_AZURE_TENANT_ID=c16b04b5-b78c-4cce-b3f8-93686f221d09
+VITE_REACT_APP_AZURE_TENANT_ID=your-azure-tenant-id-here
 ```
 
 ## 🧪 Testing

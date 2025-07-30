@@ -9,8 +9,8 @@ async function testMicrosoftAuth() {
     
     const testData = {
       msalToken: 'test-token-for-logging',
-      clientId: '8d042e34-5a5f-40f5-a019-ee56de49b64e',
-      tenantId: 'c16b04b5-b78c-4cce-b3f8-93686f221d09'
+      clientId: 'your-azure-client-id-here',
+      tenantId: 'your-azure-tenant-id-here'
     };
     
     console.log('📤 Sending test request with data:', {

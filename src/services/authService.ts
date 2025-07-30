@@ -307,7 +307,7 @@ class AuthService {
       return new Promise((resolve, reject) => {
         // Initialize Google Sign-In with no redirect URI
         const client = (window as any).google.accounts.oauth2.initTokenClient({
-          client_id: import.meta.env.VITE_REACT_APP_GOOGLE_CLIENT_ID || '1003899655255-ib2ru0fiq7apqbgt4ifk48rmka88kqf0.apps.googleusercontent.com',
+          client_id: import.meta.env.VITE_REACT_APP_GOOGLE_CLIENT_ID || '',
           scope: 'openid profile email',
           prompt: 'select_account',
           callback: async (response: any) => {
