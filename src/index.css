@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-white text-black font-sans;
+  background: linear-gradient(135deg, #ffffff 0%, #f5f7fa 100%);
+  min-height: 100vh;
+  transition: background 0.5s;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #181818;
+}
+::-webkit-scrollbar-thumb {
+  background: #2563eb;
+  border-radius: 4px;
+}
+
+a {
+  @apply text-primary hover:underline transition-colors duration-200;
+}
+
+input, textarea, select {
+  @apply bg-white text-white border border-primary rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-200;
+}
+
+button {
+  @apply bg-primary text-white font-bold rounded px-4 py-2 transition-all duration-200 shadow-lg relative overflow-hidden;
+}
+button:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(37,99,235,0.12);
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  transition: width 0.4s, height 0.4s;
+  z-index: 0;
+}
+button:active:after {
+  width: 200px;
+  height: 200px;
+}
+button:hover {
+  box-shadow: 0 0 16px #2563eb40, 0 2px 8px #0002;
+  color: #2563eb;
+  background: #f5f7fa;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-xl p-6 border border-gray-200 backdrop-blur-md;
+  background: linear-gradient(120deg, rgba(255,255,255,1) 60%, rgba(37,99,235,0.05) 100%);
+  transition: box-shadow 0.3s, background 0.3s;
+}
+.card:hover {
+  box-shadow: 0 8px 32px #2563eb20, 0 2px 8px #0002;
+  background: linear-gradient(120deg, rgba(255,255,255,1) 60%, rgba(37,99,235,0.10) 100%);
+}
+
+.sidebar {
+  @apply bg-black text-white w-64 min-h-screen flex flex-col shadow-2xl;
+  transition: box-shadow 0.3s;
+}
+.sidebar button {
+  @apply transition-all duration-200;
+}
+.sidebar button:hover, .sidebar button:focus {
+  background: #2563eb;
+  color: #fff;
+  box-shadow: 0 0 12px #2563eb;
+}
+
+/* Animated spinner for loading states */
+.spinner {
+  border: 4px solid #f5f7fa;
+  border-top: 4px solid #2563eb;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

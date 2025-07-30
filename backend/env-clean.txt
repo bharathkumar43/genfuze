@@ -1,0 +1,60 @@
+# Server Configuration
+PORT=5000
+NODE_ENV=development
+ 
+# JWT Configuration
+JWT_SECRET=your-jwt-secret-here
+ 
+# Authentication Configuration
+AUTH_TYPE=local
+ENABLE_LOCAL_AUTH=true
+ 
+# Microsoft Entra ID Configuration
+AZURE_CLIENT_ID=your-azure-client-id-here
+AZURE_TENANT_ID=your-azure-tenant-id-here
+ 
+# Database Configuration
+DB_PATH=./sessions.db
+
+# CORS Configuration
+CORS_ORIGIN=http://localhost:5000
+
+GOOGLE_API_KEY=AIzaSyAIcgHdsXXO1lbmVE1Pz7tX1CpcwFIlkJQ
+GOOGLE_CSE_ID=14fbe1a7daee04f27
+
+ANTHROPIC_API_KEY=sk-ant-api03-a9URLvR57WsNBgGz75ApE_rQmV5CeKlT9J3_8fJEDHvpVbNKXlc8OQOheryUl1bZT21h-VLjEJ
+UVM57UreRDfA8WzqDK7Ujiu8vOSXeGMkkezrrTScefPkEGqX2CADuECz7hc4O8Ug6jkbCKmscA
+
+# LLM API Configuration
+# Gemini API
+GEMINI_API_KEY=AIzaSyCMO28d7v8lI8W9VIOL-ENdMmlw9okPoJw
+GEMINI_BASE_URL=https://generativelanguage.googleapis.com/v1beta
+
+# OpenAI/ChatGPT API
+OPENAI_API_KEY=sk-proj-oTdt5VbswBQQ0QTOsDWiu-n4dM-jyAZaLV6o8HbGXLeJFza_AmLjv3wdeeqAFDtwgbhzm2XoZtT3BlbkFJ
+UVM57UreRDfA8WzqDK7Ujiu8vOSXeGMkkezrrTScefPkEGqX2CADuECz7hc4O8Ug6jkbCKmscA
+OPENAI_BASE_URL=https://api.openai.com/v1
+
+# Perplexity API
+PERPLEXITY_API_KEY=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
+PERPLEXITY_BASE_URL=https://api.perplexity.ai
+
+# Google Serper API (Answer provider only)
+SERPER_API_KEY=d63e63a6aee4b56617448d58d38dbd980c855445
+SERPER_BASE_URL=https://google.serper.dev
+
+# Email Configuration - Gmail SMTP
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_SECURE=false
+SMTP_USER=bharathkumartummaganti@gmail.com
+SMTP_PASS=mjzzmqcdnmlmvkpu
+SMTP_FROM=bharathkumartummaganti@gmail.com
+
+NODE_ENV=development
+JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
+AZURE_CLIENT_ID=8d042e34-5a5f-40f5-a019-ee56de49b64e
+AZURE_TENANT_ID=c16b04b5-b78c-4cce-b3f8-93686f221d09
+AZURE_CLIENT_SECRET=9b2990a3-ddb5-4d8c-99a4-9fde74527f2c
+
+SEMRUSH_API_KEY=2973aea29571fe45909495a1dde09472 
